@@ -18,8 +18,7 @@ public class Test_Base {
 	
 	public static WebDriver driver;
 	public static Properties prop; //global level
-	String path = "C:\\Users\\Elphill\\eclipse-workspace\\IssueWire_Project\\src\\main\\java\\com\\issuewire\\qa\\config\\config.properties";
-	
+	String path = "C:\\Users\\Elphill\\git\\IssueWire\\IssueWire_Project\\src\\main\\java\\com\\issuewire\\qa\\config\\config.properties";
 	public Test_Base() {
 		
 		try {

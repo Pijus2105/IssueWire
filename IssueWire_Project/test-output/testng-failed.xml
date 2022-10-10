@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.issuewire.qa.tests.LoginPageTest">
+      <class name="com.issuewire.qa.tests.login_Test">
         <methods>
-          <include name="setUp"/>
-          <include name="loginPage"/>
-          <include name="loginTest"/>
+          <include name="validateLoginPageTitle"/>
+          <include name="setup"/>
         </methods>
-      </class> <!-- com.issuewire.qa.tests.LoginPageTest -->
+      </class> <!-- com.issuewire.qa.tests.login_Test -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

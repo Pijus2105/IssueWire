@@ -15,18 +15,18 @@ public class Log_In extends Test_Base {
 	@FindBy(xpath="//a[contains(@title,'login')]")
 	WebElement login;
 
-	@FindBy(name = "email")
-	WebElement Email;
-	
-	@FindBy(name ="password")
-	WebElement password;
-	
-	@FindBy(xpath="//input[@name='submit']")
-	WebElement click;
-	
-	@FindBy(linkText="Forgot Password")
-	//(xpath="//a[contains(text(),'Forgot Password')]")
-	WebElement forgotpassword;
+//	@FindBy(name = "email")
+//	WebElement Email;
+//	
+//	@FindBy(name ="password")
+//	WebElement password;
+//	
+//	@FindBy(xpath="//input[@name='submit']")
+//	WebElement click;
+//	
+//	@FindBy(linkText="Forgot Password")
+//	//(xpath="//a[contains(text(),'Forgot Password')]")
+//	WebElement forgotpassword;
 //	
 //	@FindBy(xpath="//a[contains(text(),'Signup')]")
 //	WebElement signup;
@@ -61,9 +61,9 @@ public class Log_In extends Test_Base {
 
 
 	public Home_Page login(String us, String Pass) {
-		//firstlogin.click();
+		
 		login.click();
-		forgotpassword.click();
+		//forgotpassword.click();
 //		Email.sendKeys(us);
 //		password.sendKeys(Pass);
 //	    click.click();
