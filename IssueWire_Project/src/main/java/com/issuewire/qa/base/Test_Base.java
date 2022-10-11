@@ -41,10 +41,10 @@ public class Test_Base {
 			//WebDriverManager.chromedriver().setup();
 			 driver = new ChromeDriver();
 		}
-//		 if(browserName.equals("FF")) {
-//			//System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
-//			WebDriverManager.firefoxdriver().setup();
-//			driver = new FirefoxDriver();
+		 //else if(browserName.equals("FF")) {
+			//System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
+			//WebDriverManager.firefoxdriver().setup();
+            //driver = new FirefoxDriver();
 		
 //		}else if(browserName.equals("IOE")) {
 //			//System.setProperty("webdriver.ie.driver", "C:/path/to/IEDriverServer.exe");

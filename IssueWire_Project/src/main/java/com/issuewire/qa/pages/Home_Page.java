@@ -8,17 +8,21 @@ import com.issuewire.qa.base.Test_Base;
 
 public class Home_Page extends Test_Base {
 	
-//	@FindBy(xpath="//div[@id='blk2']//div[@class='col-md-12 fa-block text-center']")
-//	WebElement PressRelease;
-//	
-//	public Home_Page() {
-//		PageFactory.initElements(driver, this);
-//	}
-//	
-//
-//   public String validateLoginPageTitle() {
-//	   return driver.getTitle();
-//   }
+	//PageFactory-Object repository
+	@FindBy(xpath="//i[@class='fa fa-newspaper-o fa-5x']")
+	WebElement PressRelease;
 	
+	
+	public Home_Page() {
+		PageFactory.initElements(driver, this);
+	}
 
+ public String verifyHomePageTitle() {
+	return driver.getTitle();
+ }
+
+ public PressRel clickPR() {
+	 PressRelease.click();
+	 return new PressRel();
+ }
 }
