@@ -25,13 +25,17 @@ public class login_Test extends Test_Base {
 	@Test
 	public void validateLoginPageTitle () {
 		String title = Log.validateLoginPageTitle();
-		Assert.assertEquals(title, "Press Release Distribution Services | Paid Press Release Distribution");
+		Assert.assertEquals(title, "Press Release Distribution Services | Paid Press Release Distribution");		
+		Log.login(prop.getProperty("Email"), prop.getProperty("password"));
+		
 	}
+	
+
 	
 //	@AfterMethod
 //	public void tearDown() {
 //		driver.quit();
 //	}
-	
+//	
 
 }

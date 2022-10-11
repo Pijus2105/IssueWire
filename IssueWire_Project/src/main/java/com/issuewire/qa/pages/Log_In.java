@@ -9,20 +9,19 @@ import com.issuewire.qa.base.Test_Base;
 public class Log_In extends Test_Base {
 	
 	//PageFactory-Object repository
-	//@FindBy(xpath="//ul[@class='nav navbar-nav navbar-right']/li[6]")
-	//WebElement firstlogin;
 	
-	@FindBy(xpath="//a[contains(@title,'login')]")
+	
+	@FindBy(xpath="//ul[@class=\"nav navbar-nav navbar-right\"]//li[6]")
 	WebElement login;
 
-//	@FindBy(name = "email")
-//	WebElement Email;
-//	
-//	@FindBy(name ="password")
-//	WebElement password;
-//	
-//	@FindBy(xpath="//input[@name='submit']")
-//	WebElement click;
+	@FindBy(name = "email")
+	WebElement Email;
+	
+	@FindBy(name ="password")
+	WebElement password;
+	
+	@FindBy(xpath="//input[@name='submit']")
+	WebElement click;
 //	
 //	@FindBy(linkText="Forgot Password")
 //	//(xpath="//a[contains(text(),'Forgot Password')]")
@@ -41,11 +40,7 @@ public class Log_In extends Test_Base {
 		PageFactory.initElements(driver, this);
 	}
 	
-//	public void InHomePage() {
-//		
-//		firstlogin.click();
-//		
-//	}
+
 	
 	
 	//Actions:
@@ -54,19 +49,15 @@ public class Log_In extends Test_Base {
 		return driver.getTitle();
 	}
 	
-//	public void Inlogin() {
-//		forgotpassword.click();
-//	}
-//	
+
 
 
 	public Home_Page login(String us, String Pass) {
 		
-		login.click();
-		//forgotpassword.click();
-//		Email.sendKeys(us);
-//		password.sendKeys(Pass);
-//	    click.click();
+		login.click();	
+		Email.sendKeys(us);
+		password.sendKeys(Pass);
+	    click.click();
 	    
 	    	    
 	return new Home_Page();
